@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:wght@100;300;400;500;600&display=swap");
+
+.header {
+  background-color: var(--cor-principal);
+  padding: 20px 0;
+}
+
+.header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header section nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header section .logo {
+  font-weight: 500;
+  font-size: 3.4rem;
+  color: var(--cor-white);
+}
+
+.header section .logo strong {
+  font-size: 3.4rem;
+  color: var(--cor-font-extra);
+}
+
+.header section nav ul li a {
+  color: var(--cor-white);
+}
+
+.header section nav ul li .active {
+  color: var(--cor-font-extra);
+}
+
+/* Sobre */
+
+main .sobre {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--cor-white);
+  padding: 4rem 0;
+  margin: 0 1rem;
+}
+
+.sobre h1 {
+  font-size: 4.8rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+}
+
+.sobre h1 strong {
+  font-size: 4.8rem;
+  color: var(--cor-font-extra);
+}
+
+.sobre h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+}
+
+.sobre h3:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-principal);
+  height: 0.4rem;
+  width: 4rem;
+  margin: 1.2rem 0;
+}
+
+.sobre p {
+  max-width: 50rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+}
+
+.sobre aside {
+  margin-top: 2rem;
+}
+
+/* ajude */
+.ajude {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.ajude h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0;
+}
+
+.ajude p {
+  max-width: 80rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0 4rem 0;
+}
+
+/* como-doar */
+.como-doar {
+  background-color: var(--cor-principal);
+  color: var(--cor-white);
+  padding: 4rem 1rem;
+}
+
+.como-doar h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0 4rem 0;
+  text-align: center;
+  color: var(--cor-white);
+}
+
+.como-doar h3:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-white);
+  height: 0.4rem;
+  width: 4rem;
+  margin: 1.2rem auto;
+}
+
+.como-doar section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.como-doar-div p {
+  margin: 1rem 0 4rem 0;
+  max-width: 40rem;
+  font-size: 1.8rem;
+}
+
+.como-doar-div .btn-principal {
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+
+/* salve-vidas */
+.salve-vidas {
+  background-color: var(--cor-white);
+  margin: 6rem;
+}
+
+.salve-vidas h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0 4rem 0;
+  text-align: center;
+  color: var(--cor-principal);
+}
+
+.salve-vidas h3:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-principal);
+  height: 0.4rem;
+  width: 6rem;
+  margin: 1.2rem auto;
+}
+
+.salve-vidas section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.salve-vidas section aside {
+  max-width: 30rem;
+  position: relative;
+}
+
+.salve-vidas section aside .btn-principal {
+  position: absolute;
+  top: 26rem;
+  left: 7rem;
+  background-color: var(--cor-principal);
+  color: var(--cor-white);
+  padding: 1rem 3rem;
+}
+
+.salve-vidas section aside h4 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin: 4rem 1rem 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--cor-h);
+}
+
+.salve-vidas section aside p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--cor-h);
+}

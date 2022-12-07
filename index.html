@@ -8,126 +8,138 @@
   <meta property="og:type" content="website" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/patterns.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
   <title>PetProz</title>
 </head>
 
 <body>
-  <header>
-    <a href="index.html">Pet<strong>Proz</strong></a>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Sobre</a>
-        </li>
-        <li>
-          <a href="adotar.html">Animais</a>
-        </li>
-        <li>
-          <a href="adocao.html">Doação</a>
-        </li>
-        <li>
-          <a href="adotar.html">Adoção</a></li>
-        </li>
-        <li>
-          <a href="contato.html">Contato</a></li>
-        </li>
-      </ul>
-    </nav>
-    <button>Crie Sua Conta</button>
+  <header class="header">
+    <section class="container">
+      <a class="logo" href="index.html">Pet<strong>Proz</strong></a>
+      <nav>
+        <ul>
+          <li>
+            <a class="active" href="index.html">Sobre</a>
+          </li>
+          <li>
+            <a href="adotar.html">Animais</a>
+          </li>
+          <li>
+            <a href="adocao.html">Doação</a>
+          </li>
+          <li>
+            <a href="adotar.html">Adoção</a></li>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a></li>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-principal">Crie Sua Conta</button>
+    </section>
   </header>
 
-  <main>
-    <section>
-      <h1>Pet<strong>Proz</strong></h1>
-      <h3>Para quem ama os animais</h3>
-      <p>
-        O trabalho de uma ONG de adoção de animais é muito importante e inspirador. São grupos de pessoas que se dedicam
-        a proteger, resgatar e acolher bichinhos em alguma situação de risco. Além disso, há políticas para os novos
-        tutores levarem os pets para casa com a garantia de um ambiente saudável.
-      </p>
+  <main class="container">
+    <section class="sobre">
+      <section class="">
+        <h1>Pet<strong>Proz</strong></h1>
+        <h3>Para quem ama os animais</h3>
+        <p>
+          O trabalho de uma ONG de adoção de animais é muito importante e inspirador. São grupos de pessoas que se dedicam
+          a proteger, resgatar e acolher bichinhos em alguma situação de risco. Além disso, há políticas para os novos
+          tutores levarem os pets para casa com a garantia de um ambiente saudável.
+        </p>
+      </section>
+      <aside>
+        <figure>
+          <img src="./img/animal.png" alt="Animal Cachorro">
+        </figure>
+      </aside>
     </section>
-    <aside>
-      <figure>
-        <img src="./img/animal.png" alt="Animal Cachorro">
-        <figcaption>Animal Cachorro</figcaption>
-      </figure>
-    </aside>
   </main>
 
   <!-- -->
-  <article>
-    <h2>Ajude uma ONG</h2>
-    <p>
-      Por meio deste canal, você pode realizar doações para uma de nossas ONGs parceiras. Escolha a sua preferida,
-      selecione os produtos que deseja enviar para a instituição, faça o pagamento e o frete é por nossa conta! ;)
-    </p>
-    <button>Doar Agora</button>
-  </article>
+  <section class="container">
+    <section  class="ajude">
+      <h2>Ajude uma ONG</h2>
+      <p>
+        Por meio deste canal, você pode realizar doações para uma de nossas ONGs parceiras. Escolha a sua preferida,
+        selecione os produtos que deseja enviar para a instituição, faça o pagamento e o frete é por nossa conta! ;)
+      </p>
+      
+    </section>
+  </section>
 
   <!-- -->
-  <section>
+  <section class="como-doar">
     <h3>Como Doar ?</h3>
-    <section>
-      <p>
-        Com a sua doação, você nos ajuda a mudar a realidade de milhares de animais.
-      </p>
-      <button>Quero Doar Agora</button>
+    <section class="container">
+      <div class="como-doar-div">
+        <p>
+          Com a sua doação, você nos ajuda a <br> mudar a realidade de milhares de <br> animais.
+        </p>
+        <button class="btn-principal">Quero Doar Agora</button>
+      </div>
+      <aside>
+        <figure>
+          <img src="./img/section-doar.png" alt="Doar">
+        </figure>
+      </aside>
     </section>
-    <aside>
-      <figure>
-        <img src="./img/section-doar.png" alt="Doar">
-        <figcaption>Animal Doar</figcaption>
-      </figure>
-    </aside>
   </section>
   <!-- -->
 
   <!-- -->
-  <section>
+  <section class="salve-vidas">
     <h3>Salve Vidas</h3>
-    <aside>
-      <figure>
-        <img src="./img/animal-ajude.png" alt="Animal Ajude">
-        <figcaption></figcaption>
-      </figure>
-      <button>ADOTE</button>
-      <h4>ADOTAR UM ANIMAL É UM ATO DE AMOR</h4>
-      <p>
-        Agradecemos seu interesse em adotar um cão sem dono. Prepare-se para uma experiência gratificante que durará
-        muitos anos.
-      </p>
-    </aside>
-    <!-- -->
-
-    <!-- -->
-    <aside>
-      <figure>
-        <img src="./img/animal-ajude.png" alt="">
-        <figcaption></figcaption>
-      </figure>
-      <button>APADRINHE
-      </button>
-      <h4>SEJA UM COLABORADOR</h4>
-      <p>
-        O apadrinhamento de um cão é uma forma de conseguirmos recursos fixos para ajudar na tarefa diária de cuidar de
-        nossos animais, além de ter mais tranquilidade e poder planejar melhor nossas ações.
-      </p>
-    </aside>
-    <!-- -->
-
-    <!-- -->
-    <aside>
-      <figure>
-        <img src="./img/animal-ajude.png" alt="">
-        <figcaption></figcaption>
-      </figure>
-      <button>DOAÇÃO</button>
-      <h4>COMO AJUDAR UM AMIGUINHO</h4>
-      <p>
-        Existem muitas formas de nos ajudar a cuidar cães que estão abrigados em nossos lares , fora os cães que
-        ajudamos a sustentar de outros protetores.
-      </p>
-    </aside>
+    <section class="container">
+      <aside>
+        <figure>
+          <img src="./img/animal-ajude.png" alt="Animal Ajude">
+        </figure>
+        <button  class="btn-principal">ADOTE</button>
+        <h4>ADOTAR UM ANIMAL É UM ATO DE AMOR</h4>
+        <p>
+          Agradecemos seu interesse em adotar um cão sem dono. Prepare-se para uma experiência gratificante que durará
+          muitos anos.
+        </p>
+      </aside>
+      <!-- -->
+  
+      <!-- -->
+      <aside>
+        <figure>
+          <img src="./img/animal-ajude.png" alt="">
+        </figure>
+        <button  class="btn-principal">APADRINHE
+        </button>
+        <h4>SEJA UM COLABORADOR</h4>
+        <p>
+          O apadrinhamento de um cão é uma forma de conseguirmos recursos fixos para ajudar na tarefa diária de cuidar de
+          nossos animais, além de ter mais tranquilidade e poder planejar melhor nossas ações.
+        </p>
+      </aside>
+      <!-- -->
+  
+      <!-- -->
+      <aside>
+        <figure>
+          <img src="./img/animal-ajude.png" alt="">
+          <figcaption></figcaption>
+        </figure>
+        <button  class="btn-principal">DOAÇÃO</button>
+        <h4>COMO AJUDAR UM AMIGUINHO</h4>
+        <p>
+          Existem muitas formas de nos ajudar a cuidar cães que estão abrigados em nossos lares , fora os cães que
+          ajudamos a sustentar de outros protetores.
+        </p>
+      </aside>
+    </section>
   </section>
   <!-- -->
 

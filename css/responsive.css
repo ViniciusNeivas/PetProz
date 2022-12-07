@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+  /* main */
+  main .sobre {
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  main .sobre aside figure {
+    margin: 0 auto;
+  }
+
+  /* main */
+
+  .sobre h1 {
+    text-align: center;
+  }
+  .sobre h3 {
+    text-align: center;
+  }
+
+  .sobre h3:after {
+    content: "";
+    display: block;
+    background-color: var(--cor-principal);
+    height: 0.4rem;
+    width: 4rem;
+    margin: 1.2rem auto;
+  }
+
+  .sobre p {
+    text-align: center;
+  }
+
+  /* salve-vidas */
+
+  .salve-vidas {
+    background-color: var(--cor-white);
+    margin: 6rem;
+  }
+  .salve-vidas section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .salve-vidas section aside figure {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /**/
+  .como-doar section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+
+  .como-doar section aside {
+    display: none;
+  }
+}
