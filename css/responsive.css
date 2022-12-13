@@ -33,17 +33,27 @@
   }
 
   /* salve-vidas */
-
-  .salve-vidas section {
-    flex-direction: column;
-    align-items: center;
+  .salve-vidas .salve-vidas-sub-container {
+    display: flex;
     justify-content: center;
-    gap: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .salve-vidas section aside button {
-    margin-left: 30rem;
+  .salve-vidas-div {
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
   }
-  .salve-vidas section aside img {
+  .salve-vidas-div img {
+    display: inline-block;
+  }
+  .salve-vidas-div h4 {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .salve-vidas-div p {
+    max-width: 400px;
     margin: 0 auto;
   }
 }
@@ -61,10 +71,6 @@
     align-items: center;
     text-align: center;
   }
-  .salve-vidas section aside button {
-    margin-left: 30rem;
-  }
-
 }
 
 @media (max-width: 500px) {
@@ -75,5 +81,4 @@
   .como-doar section aside {
     display: none;
   }
-
 }

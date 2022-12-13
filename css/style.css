@@ -166,46 +166,49 @@ main .sobre {
   display: block;
   background-color: var(--cor-principal);
   height: 0.4rem;
-  width: 6rem;
+  width: 4rem;
   margin: 1.2rem auto;
 }
 
-.salve-vidas section {
+.salve-vidas .salve-vidas-sub-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 10px;
+}
+
+.salve-vidas-div {
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   position: relative;
 }
 
-.salve-vidas section aside {
-  flex: 1;
-  flex-direction: column;
-}
-
-.salve-vidas section aside button {
-  background-color: var(--cor-principal);
-  color: var(--cor-white);
-  position: absolute;
-  margin: -2rem 8rem 1rem;
-}
-
-.salve-vidas section aside h4 {
-  font-size: 2.4rem;
+.salve-vidas-div h4 {
+  font-size: 2.2rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  margin: 4rem 1rem 2rem 1rem;
-  padding: 1rem;
+  margin: 2rem 0 2rem 0;
   text-align: center;
   color: var(--cor-h);
 }
 
-.salve-vidas section aside p {
-  font-size: 1.8rem;
+.salve-vidas-div button {
+  position: relative;
+  top: -2.4rem;
+  padding: 1rem 2rem;
+
+  background: var(--cor-principal);
+}
+
+.salve-vidas-div p {
+  font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  margin: 2rem 1rem;
-  padding: 1rem;
+  margin: 2rem 0;
   text-align: center;
+  padding: 1rem;
   color: var(--cor-h);
 }
