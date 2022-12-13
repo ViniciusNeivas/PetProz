@@ -212,3 +212,54 @@ main .sobre {
   padding: 1rem;
   color: var(--cor-h);
 }
+
+.animais-g-c {
+  background-color: #c6aeed;
+  padding: 4rem 0;
+}
+
+.animais-g-c aside {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.animais-g-c-div {
+  flex: 1;
+  margin-bottom: 3rem;
+}
+
+.animais-g-c-div p {
+  margin-top: 1rem;
+  max-width: 38rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+/**/
+.texto {
+  text-align: center;
+  margin: 2rem 1rem;
+  padding: 1rem;
+}
+.texto h5 {
+  margin-top: 1rem;
+}
+.texto p {
+  margin-top: 1rem;
+  padding: 0 3rem;
+}
+
+/* footer */
+.footer {
+  background-color: var(--cor-principal);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--cor-white);
+}
+
+.footer strong {
+  color: var(--cor-font-extra);
+}

@@ -56,6 +56,15 @@
     max-width: 400px;
     margin: 0 auto;
   }
+
+  /*animais-g-c */
+  .animais-g-c aside {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 580px) {
