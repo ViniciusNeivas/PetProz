@@ -1,0 +1,74 @@
+main h1 {
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem;
+  padding: 6rem 0 2rem 0;
+  text-align: center;
+}
+
+main h1 strong {
+  font-size: 3.3rem;
+  color: var(--cor-font-extra);
+}
+
+h1:after {
+  content: "";
+  display: block;
+  background-color: var(--cor-font-extra);
+  height: 0.6rem;
+  width: 12rem;
+  margin: 3rem auto 1rem auto;
+}
+
+.adocao {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin: 4rem 0;
+}
+
+.adocao-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.adocao-aside {
+  max-width: 27rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: var(--cor-principal-secundaria);
+  border: 1px solid var(--cor-h);
+  border-radius: 20px;
+}
+
+.adocao-aside figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.adocao-aside button {
+  margin-top: 1rem;
+  background: var(--cor-principal);
+  color: var(--cor-white);
+}
+
+.adocao-aside button:hover {
+  background: var(--cor-font-extra);
+  color: var(--cor-white);
+}
+
+.adocao-aside div {
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+  gap: 1rem;
+}
+
+.adocao-texto {
+  color: var(--cor-white) !important;
+}
+
+footer {
+  margin-top: 4rem;
+}

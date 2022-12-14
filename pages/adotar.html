@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="petproz, site, website" />
-    <meta property="og:title" content="PetProz" />
-    <meta property="og:type" content="website" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetProz</title>
-    <link rel="stylesheet" href="./css/template.css" />
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html">Pet<strong>Proz</strong></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="petproz, site, website" />
+  <meta property="og:title" content="PetProz" />
+  <meta property="og:type" content="website" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/grid.css" />
+  <link rel="stylesheet" href="../css/patterns.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <title>PetProz</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="container">
+      <a class="logo" href="index.html">Pet<strong>Proz</strong></a>
       <nav>
         <ul>
           <li>
-            <a href="index.html">Sobre</a>
+            <a class="active" href="index.html">Sobre</a>
           </li>
           <li>
             <a href="adotar.html">Animais</a>
@@ -26,165 +34,138 @@
             <a href="adocao.html">Doação</a>
           </li>
           <li>
-            <a href="adotar.html">Adoção</a></li>
+            <a href="adotar.html">Adoção</a>
+          </li>
           </li>
           <li>
-            <a href="contato.html">Contato</a></li>
+            <a href="contato.html">Contato</a>
           </li>
-          <li>
-            <a href=""><img src="./img/icons/carrinho-de-compras.png" alt=""></a>
           </li>
         </ul>
       </nav>
-      <button>Crie Sua Conta</button>
-    </header>
-    <main>
-      <h1><strong>PetProz:</strong> Animais disponíveis para adoção</h1>
-      <!-- Section 01 -->
-      <section>
-        <aside>
-          <figure>
-            <img src="./img/animal.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
-        </aside>
-        <aside>
-          <figure>
-            <img src="./img/animal.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
-        </aside>
-        <aside>
-          <figure>
-            <img src="./img/animal.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
-        </aside>
-      </section>
-      <!-- Section 01 -->
+    </section>
+  </header>
+  <main class="container">
+    <h1><strong>PetProz:</strong> Animais disponíveis para adoção</h1>
+    <section class="adotar">
 
-      <!-- Section 02 -->
-      <section>
-        <aside>
+      <!-- Section  -->
+      <section class="adotar-section">
+        <aside class="adotar-aside">
           <figure>
-            <img src="./img/animal.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
+            <img src="../img/adota_gato.png" alt="Animal Gato" />
+            <button class="btn-principal">Adotar</button>
           </figure>
-        </aside>
-        <aside>
-          <figure>
-            <img src="./img/animal-ajude.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
-        </aside>
-        <aside>
-          <figure>
-            <img src="./img/animal-ajude.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
+          <div>
+            <strong>Raça:</strong>
+            <p>Vira-Lata</p>
+            <strong>Gênero:</strong>
+            <p>Masculino</p>
+            <strong>Nome:</strong>
+            <p>Amarelin</p>
+          </div>
         </aside>
       </section>
-      <!-- Section 02 -->
+      <!-- Section -->
+      <!-- Section  -->
+      <section class="adotar-section">
+        <aside class="adotar-aside">
+          <figure>
+            <img src="../img/adota_gato.png" alt="Animal Gato" />
+            <button class="btn-principal">Adotar</button>
+          </figure>
+          <div>
+            <strong>Raça:</strong>
+            <p>Vira-Lata</p>
+            <strong>Gênero:</strong>
+            <p>Masculino</p>
+            <strong>Nome:</strong>
+            <p>Amarelin</p>
+          </div>
+        </aside>
+      </section>
+      <!-- Section -->
+      <!-- Section  -->
+      <section class="adotar-section">
+        <aside class="adotar-aside">
+          <figure>
+            <img src="../img/adota_gato.png" alt="Animal Gato" />
+            <button class="btn-principal">Adotar</button>
+          </figure>
+          <div>
+            <strong>Raça:</strong>
+            <p>Vira-Lata</p>
+            <strong>Gênero:</strong>
+            <p>Masculino</p>
+            <strong>Nome:</strong>
+            <p>Amarelin</p>
+          </div>
+        </aside>
+      </section>
+      <!-- Section --> <!-- Section  -->
+      <section class="adotar-section">
+        <aside class="adotar-aside">
+          <figure>
+            <img src="../img/adota_gato.png" alt="Animal Gato" />
+            <button class="btn-principal">Adotar</button>
+          </figure>
+          <div>
+            <strong>Raça:</strong>
+            <p>Vira-Lata</p>
+            <strong>Gênero:</strong>
+            <p>Masculino</p>
+            <strong>Nome:</strong>
+            <p>Amarelin</p>
+          </div>
+        </aside>
+      </section>
+      <!-- Section -->
+      <!-- Section  -->
+      <section class="adotar-section">
+        <aside class="adotar-aside">
+          <figure>
+            <img src="../img/adota_gato.png" alt="Animal Gato" />
+            <button class="btn-principal">Adotar</button>
+          </figure>
+          <div>
+            <strong>Raça:</strong>
+            <p>Vira-Lata</p>
+            <strong>Gênero:</strong>
+            <p>Masculino</p>
+            <strong>Nome:</strong>
+            <p>Amarelin</p>
+          </div>
+        </aside>
+      </section>
+      <!-- Section -->
+      <!-- Section  -->
+      <section class="adotar-section">
+        <aside class="adotar-aside">
+          <figure>
+            <img src="../img/adota_gato.png" alt="Animal Gato" />
+            <button class="btn-principal">Adotar</button>
+          </figure>
+          <div>
+            <strong>Raça:</strong>
+            <p>Vira-Lata</p>
+            <strong>Gênero:</strong>
+            <p>Masculino</p>
+            <strong>Nome:</strong>
+            <p>Amarelin</p>
+          </div>
+        </aside>
+      </section>
+      <!-- Section -->
 
-      <!-- Section 03 -->
-      <section>
-        <aside>
-          <figure>
-            <img src="./img/animal-ajude.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
-        </aside>
-        <aside>
-          <figure>
-            <img src="./img/animal.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
-        </aside>
-        <aside>
-          <figure>
-            <img src="./img/animal.png" alt="Animal Cachorro" />
-            <figcaption>
-              <strong>Raça:</strong>
-              <p>Vira-Lata</p>
-              <strong>Gênero:</strong>
-              <p>Masculino</p>
-              <strong>Nome:</strong>
-              <p>Amarelin</p>
-              <button>Adicionar</button>
-            </figcaption>
-          </figure>
-        </aside>
-      </section>
-      <!-- Section 03 -->
-    </main>
-     <!-- -->
-  <footer>
-    <p>Todos os direitos reservados à Pet<strong>Proz</strong></p>
+    </section>
+  </main>
+  <!-- -->
+  <footer class="footer">
+    <section class="container">
+      <p>Todos os direitos reservados à Pet<strong>Proz</strong></p>
+    </section>
   </footer>
   <!-- -->
-  </body>
+</body>
+
 </html>
