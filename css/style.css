@@ -45,6 +45,7 @@ main .sobre {
   display: flex;
   justify-content: space-between;
 
+  align-items: center;
   background-color: var(--cor-white);
   padding: 4rem 0;
   margin: 0 1rem;
@@ -83,8 +84,9 @@ main .sobre {
   margin-top: 2rem;
 }
 
-.sobre aside {
-  margin-top: 2rem;
+.sobre aside img {
+  padding-top: 5rem;
+  height: 340px;
 }
 
 /* ajude */
