@@ -2,6 +2,7 @@
 
 @import "./adotar.css";
 @import "./adocao.css";
+@import "./cadastro.css";
 
 .header {
   background-color: var(--cor-principal);
