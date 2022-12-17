@@ -40,3 +40,12 @@ button {
 }
 
 /* */
+.clear {
+  clear: both;
+  margin: 4rem 0;
+}
+
+.btn-principal-secundario {
+  background-color: var(--cor-white);
+  color: var(--cor-font-extra);
+}

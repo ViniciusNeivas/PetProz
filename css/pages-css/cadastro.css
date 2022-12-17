@@ -33,4 +33,24 @@ form div input {
   padding: 0.5rem;
   color: var(--cor-texto);
   border-radius: 1rem;
+  border: none;
+}
+
+.btn-a {
+  align-items: flex-end;
+}
+
+.btn-a .fa-arrow-left {
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-font-extra);
+  padding: 1.5rem;
+  color: var(--cor-font-extra);
+}
+
+.btn-a .fa-arrow-left:hover {
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-white);
+  padding: 1.5rem;
+  color: var(--cor-white);
+  transition: 1s;
 }
