@@ -68,11 +68,6 @@
 }
 
 @media (max-width: 580px) {
-  .header section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
 
   /**/
   .como-doar section {
