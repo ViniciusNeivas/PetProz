@@ -52,49 +52,61 @@
       <h1>Cadastro</h1>
 
     </section>
-    <form action="" method="">
+    <form id="form" action="" method="">
       <div>
         <label for="Nome">Insira seu nome</label><br />
-        <input type="text" name="nome" id="insira_seu_nome" />
+        <input type="text"  placeholder="Digite seu nome" class="required" oninput="nameValidate()"/>
+        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
       </div>
       <div>
         <label for="text">Insira seu email</label><br />
-        <input type="text" name="endereço" id="endereco" />
+        <input type="text" name="email" placeholder="Digite seu melhor email" class="required" oninput="emailValidate()" />
+        <span class="span-required">Digite um email válido</span>
       </div>
       
       <div>
         <label for="password">Insira sua senha:</label><br />
-        <input type="password" name="senha" id="password" />
+        <input type="password" name="senha" placeholder="Digite sua senha" class="required" oninput="mainPasswordValidate()" />
+        <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
       </div>
       <div>
         <label for="password">Confirme sua senha:</label><br />
-        <input type="password" name="senha" id="password" />
+        <input type="password" name="senha" placeholder="Repita a sua senha" class="required" oninput="comparePassword()" />
+        <span class="span-required">Senhas devem ser compatíveis</span>
       </div>
-      <div>
-        <label for="text">Confirme seu email</label><br />
-        <input type="text" name="email" id="email" />
-      </div>
+      <!--
+              <div>
+              <label for="text">Confirme seu email</label><br />
+              <input type="text" name="email" placeholder="Digite seu melhor email" class="required" oninput="emailValidate()" />
+              <span class="span-required">Digite um email válido</span>
+            </div>
+      -->
       <div>
         <h4>Endereço</h4>
         <label for="text">Rua:</label><br />
-        <input type="text" name="email" id="email" />
+        <input type="text" name="endereco" placeholder="Digite seu rua" class="required" oninput="ruaValidate()" />
+        <span class="span-required">Endereco deve ter no mínimo 15 caracteres</span>
       </div>
       <div>
         <label for="text">Insira seu cep:</label><br />
-        <input type="text" name="cep" id="codigopostal" />
+        <input type="text" name="cep" placeholder="Digite seu cep" class="required" oninput="cepValidate()" />
+        <span class="span-required">Cep deve ter no mínimo 15 caracteres</span>
       </div>
       <div>
         <label for="text">Bairro:</label><br />
-        <input type="text" name="bairro" id="bairro" /><br />
+        <input type="text" name="bairro" placeholder="Digwwwite seu Bairro" class="required" oninput="bairroValidate()" />
+        <span class="span-required">Bairro deve ter no mínimo 15 caracteres</span>
       </div>
       <div>
         <label for="text">Número da sua casa:</label><br />
-        <input type="text" name="numerodacasa" id="numero" />
+        <input type="text" name="numerodacasa"  placeholder="Digite o numero da casa" class="required" oninput="numeroValidate()" />
+        <span class="span-required">Número deve ter no mínimo 5 caracteres</span>
       </div>
       
       <div>
         <label for="text">Complemento:</label><br />
-        <input type="text" name="complemento" id="complemento" />
+        <input type="text" name="complemento"  placeholder="Digite o complemento da casa" class="required" oninput="complementoValidate()" />
+        <span class="span-required">Complemento deve ter no mínimo 20 caracteres</span>
       </div>
       
   
@@ -116,6 +128,7 @@
     </section>
    </footer>
    <!-- -->
+   <script src="/js/validacao-form01.js"></script>
  </body>
  
  </html>

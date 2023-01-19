@@ -25,3 +25,14 @@ p {
   font-size: 1.6rem;
   line-height: 1.9rem;
 }
+
+
+.span-required {
+  font-size: 14px;
+  margin: 3px 0 0 1px;
+  color: var(--color-red);
+  display: none;
+  padding: 1.4rem 0.4rem;
+  background: var(--cor-principal-secundaria);
+  border-radius: 1rem;
+}
