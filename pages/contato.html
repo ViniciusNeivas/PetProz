@@ -14,36 +14,52 @@
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
   <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>PetProz</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <section class="container">
-      <a class="logo" href="../index.html">Pet<strong>Proz</strong></a>
-      <nav>
-        <ul>
-          <li>
+      <div>
+        <a class="logo" href="../index.html">Pet<strong>Proz</strong></a>
+      </div>
+      <nav id="nav">
+        <div id="btn-mobile">
+          <span id="hamburguer"></span>
+        </div>
+        <ul id="menu">
+          <li class="active">
             <a class="active" href="../index.html">Sobre</a>
           </li>
           <li>
-            <a href="./adotar.html">Animais</a>
+            <a href=".//pages/adotar.html">Animais</a>
           </li>
           <li>
-            <a href="./doacao.html">Doação</a>
+            <a href=".//pages/doacao.html">Doação</a>
           </li>
           <li>
-            <a href="./adotar.html">Adoção</a>
+            <a href=".//pages/adotar.html">Adoção</a>
           </li>
           </li>
           <li>
-            <a href="./contato.html">Contato</a>
-          </li>
+            <a href=".//pages/contato.html">Contato</a>
           </li>
         </ul>
       </nav>
+      <!-- 
+        <div>
+        <a href="./pages/cadastro.html">
+          <button  class="btn-principal">Crie Sua Conta</button>
+        </a>
+        <a href="./pages/login.html">
+          <button  class="btn-principal .btn-principal-secundario"><i class="fa fa-home" aria-hidden="true"></i></button>
+        </a>
+       
+      </div>
+      -->
     </section>
   </header>
  
@@ -71,6 +87,7 @@
        <p>Todos os direitos reservados à Pet<strong>Proz</strong></p>
       </section>
      </footer>
+     <script src="../js/script.js"></script>
      <!-- -->
    </body>
    
