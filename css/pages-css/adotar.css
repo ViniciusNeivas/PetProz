@@ -2,7 +2,7 @@ main h1 {
   font-size: 3.3rem;
   letter-spacing: 0.2rem;
 
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 0 0rem 0;
   text-align: center;
 }
 
@@ -17,7 +17,7 @@ h1:after {
   background-color: var(--cor-font-extra);
   height: 0.6rem;
   width: 12rem;
-  margin: 1rem auto 1rem auto;
+  margin: 1rem auto 0rem auto;
 }
 
 .adotar {
@@ -34,15 +34,17 @@ h1:after {
 }
 
 .adotar-aside {
-  max-width: 27rem;
+  max-width: 20rem;
   padding: 2rem;
-  margin: 1rem;
+  margin: 0.5rem;
   background-color: var(--cor-principal-secundaria);
   border-radius: 20px;
 }
+
 .adotar-aside h4 {
   color: var(--white);
 }
+
 .adotar-aside figure {
   display: flex;
   flex-direction: column;

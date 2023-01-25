@@ -1,8 +1,8 @@
 main h1 {
   font-size: 3.3rem;
   letter-spacing: 0.2rem;
-  margin: 2rem;
-  padding: 6rem 0 2rem 0;
+  margin: 2rem 0 0 0;
+  padding: 6rem 0 0rem 0;
   text-align: center;
 }
 
@@ -17,7 +17,7 @@ h1:after {
   background-color: var(--cor-font-extra);
   height: 0.6rem;
   width: 12rem;
-  margin: 3rem auto 1rem auto;
+  margin: 2rem auto 0rem auto;
 }
 
 .adocao {
@@ -25,7 +25,7 @@ h1:after {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 0.2rem;
-  margin: 4rem 0;
+  margin: 0rem 0 2rem 0;
 }
 
 .adocao-section {
@@ -35,8 +35,8 @@ h1:after {
 }
 
 .adocao-aside {
-  max-width: 27rem;
-  padding: 2rem;
+  max-width: 20rem;
+  padding: 1rem;
   margin: 1rem;
   background-color: var(--cor-principal-secundaria);
   border: 1px solid var(--cor-h);
