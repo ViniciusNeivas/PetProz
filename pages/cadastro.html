@@ -92,23 +92,23 @@
       -->
       <div>
         <h4>Endereço</h4>
-        <label for="text">Rua:</label><br />
-        <input type="text" name="endereco" placeholder="Digite seu rua" class="required" oninput="ruaValidate()" />
-        <span class="span-required">Endereco deve ter no mínimo 15 caracteres</span>
+        <label for="text">Logradouro:</label><br />
+        <input type="text" name="endereco" placeholder="Digite o nome da sua rua, avenida, etc" class="required" oninput="ruaValidate()" />
+        <span class="span-required">Logradouro deve ter no mínimo 6 caracteres</span>
       </div>
       <div>
-        <label for="text">Insira seu cep:</label><br />
-        <input type="text" name="cep" placeholder="Digite seu cep" class="required" oninput="cepValidate()" />
-        <span class="span-required">Cep deve ter no mínimo 15 caracteres</span>
+        <label for="text">Insira seu CEP:</label><br />
+        <input type="text" name="cep" placeholder="Ex: 00000-000" class="required" oninput="cepValidate()" />
+        <span class="span-required">Cep deve ter no mínimo 9 caracteres</span>
       </div>
       <div>
         <label for="text">Bairro:</label><br />
-        <input type="text" name="bairro" placeholder="Digwwwite seu Bairro" class="required" oninput="bairroValidate()" />
-        <span class="span-required">Bairro deve ter no mínimo 15 caracteres</span>
+        <input type="text" name="bairro" placeholder="Digite seu bairro" class="required" oninput="bairroValidate()" />
+        <span class="span-required">Bairro deve ter no mínimo 10 caracteres</span>
       </div>
       <div>
         <label for="text">Número da sua casa:</label><br />
-        <input type="text" name="numerodacasa"  placeholder="Digite o numero da casa" class="required" oninput="numeroValidate()" />
+        <input type="text" name="numerodacasa"  placeholder="Digite o número da casa" class="required" oninput="numeroValidate()" />
         <span class="span-required">Número deve ter no mínimo 5 caracteres</span>
       </div>
       
@@ -117,8 +117,6 @@
         <input type="text" name="complemento"  placeholder="Digite o complemento da casa" class="required" oninput="complementoValidate()" />
         <span class="span-required">Complemento deve ter no mínimo 20 caracteres</span>
       </div>
-      
-  
       
       <div class="btn">
         <button class="btn-principal" type="submit">Cadastrar</button>

@@ -26,28 +26,28 @@ function removeError(index) {
   spans[index].style.display = 'none';
 }
 
-function nameValidate() {
-  if (campos[0].value.length < 3) {
+function emailValidate() {
+  if (!emailRegex.test(campos[0].value)) {
     setError(0);
   } else {
     removeError(0);
   }
 }
 
-function emailValidate() {
-  if (!emailRegex.test(campos[1].value)) {
+function mainPasswordValidate() {
+  if (campos[1].value.length < 8) {
     setError(1);
   } else {
     removeError(1);
+    comparePassword();
   }
 }
 
-function mainPasswordValidate() {
-  if (campos[2].value.length < 8) {
+function nameValidate() {
+  if (campos[2].value.length < 3) {
     setError(2);
   } else {
     removeError(2);
-    comparePassword();
   }
 }
 
@@ -59,9 +59,8 @@ function comparePassword() {
   }
 }
 
-
 function ruaValidate() {
-  if (campos[4].value.length < 15) {
+  if (campos[4].value.length < 6) {
     setError(4);
   } else {
     removeError(4);
@@ -69,7 +68,7 @@ function ruaValidate() {
 }
 
 function cepValidate() {
-  if (campos[5].value.length < 15) {
+  if (campos[5].value.length < 9) {
     setError(5);
   } else {
     removeError(5);
@@ -77,7 +76,7 @@ function cepValidate() {
 }
 
 function bairroValidate() {
-  if (campos[6].value.length < 15) {
+  if (campos[6].value.length < 10) {
     setError(6);
   } else {
     removeError(6);

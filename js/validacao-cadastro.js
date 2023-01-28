@@ -59,9 +59,8 @@ function comparePassword() {
   }
 }
 
-
 function ruaValidate() {
-  if (campos[4].value.length < 15) {
+  if (campos[4].value.length < 6) {
     setError(4);
   } else {
     removeError(4);
@@ -69,7 +68,7 @@ function ruaValidate() {
 }
 
 function cepValidate() {
-  if (campos[5].value.length < 15) {
+  if (campos[5].value.length < 9) {
     setError(5);
   } else {
     removeError(5);
@@ -77,7 +76,7 @@ function cepValidate() {
 }
 
 function bairroValidate() {
-  if (campos[6].value.length < 15) {
+  if (campos[6].value.length < 10) {
     setError(6);
   } else {
     removeError(6);
@@ -85,7 +84,7 @@ function bairroValidate() {
 }
 
 function numeroValidate() {
-  if (campos[7].value.length < 5) {
+  if (campos[7].value.length  < 1 || campos[7].value <= 0) {
     setError(7);
   } else {
     removeError(7);
