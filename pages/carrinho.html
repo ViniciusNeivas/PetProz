@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="petproz, site, website" />
+    <meta property="og:title" content="PetProz" />
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/patterns.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/pages-css/carrinho.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>PetProz</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <section class="container">
+        <div>
+          <a class="logo" href="../index.html">Pet<strong>Proz</strong></a>
+        </div>
+        <nav id="nav">
+          <div id="btn-mobile">
+            <span id="hamburguer"></span>
+          </div>
+          <ul id="menu">
+            <li class="active">
+              <a class="active" href="../index.html">Sobre</a>
+            </li>
+            <li>
+              <a href="./doacao.html">Doação</a>
+            </li>
+            <li>
+              <a href="./adotar.html">Adoção</a>
+            </li>
+            <li>
+              <a href="./contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <a href="./cadastro.html">
+            <button class="btn-principal">Crie Sua Conta</button>
+          </a>
+          <a href="./login.html">
+            <button class="btn-principal .btn-principal-secundario">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </button>
+          </a>
+        </div>
+      </section>
+    </header>
+    <main class="container">
+      <section>
+        <h1>
+          <strong>PetProz:</strong> Brinquedos disponíveis para vendas para
+          arrecadar fundos à ONG
+        </h1>
+      </section>
+    </main>
+    <section id="carrinho" class="container">
+      <div class="carrinho-produtos" id="produto0">
+        <div class="produto-pet">
+          <h3>Produtos</h3>
+          <div>
+            <img
+              src="../img/brinquedo-bola-tenis.png"
+              alt="Ratinho de Carrinho "
+            />
+          </div>
+          <div>
+            <h4>Descrição</h4>
+            <h4>Ratinho de Carrinho - Pack com 2</h4>
+          </div>
+        </div>
+        <div class="produto-pet">
+          <h3>Preços</h3>
+          <h4>R$ 25.00</h4>
+        </div>
+        <div class="produto-pet">
+          <h3>Quantidade</h3>
+          <div class="produto-pet-span">
+            <span class="fa fa-minus-square" onclick="removerItem(0)"></span
+            ><span id="quantidade0">0</span>
+            <span class="fa fa-plus-square" onclick="adicionarItem(0)"></span>
+          </div>
+        </div>
+        <div class="produto-pet">
+          <h3>Total</h3>
+          <div><b>R$</b> <span id="total0"></span></div>
+        </div>
+      </div>
+      <div class="carrinho-produtos" id="produto1">
+        <div class="produto-pet">
+          <h3>Produtos</h3>
+          <div>
+            <img
+              src="../img/brinquedo-bola-tenis.png"
+              alt="Ratinho de Carrinho "
+            />
+          </div>
+          <div>
+            <h4>Descrição</h4>
+            <h4>Ratinho de Carrinho - Pack com 2</h4>
+          </div>
+        </div>
+        <div class="produto-pet">
+          <h3>Preços</h3>
+          <h4>R$ 25.00</h4>
+        </div>
+        <div class="produto-pet">
+          <h3>Quantidade</h3>
+          <div class="produto-pet-span">
+            <span class="fa fa-minus-square" onclick="removerItem(1)"></span
+            ><span id="quantidade1">0</span>
+            <span class="fa fa-plus-square" onclick="adicionarItem(1)"></span>
+          </div>
+        </div>
+        <div class="produto-pet">
+          <h3>Total</h3>
+          <div><b>R$</b> <span id="total1"></span></div>
+        </div>
+      </div>
+      <!-- 
+         <div class="subtotal">
+        <div class="subtotal">
+          <h3>
+            SUBTOTAL R$<span class="pl-md-4" id="valorTotalCompra"></span>
+          </h3>
+        </div>
+      </div>
+      -->
+    </section>
+    <footer class="footer">
+      <section class="container">
+        <p>Todos os direitos reservados à Pet<strong>Proz</strong></p>
+      </section>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/carrinho.js"></script>
+    <!-- -->
+  </body>
+</html>
