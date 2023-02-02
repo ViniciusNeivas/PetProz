@@ -29,6 +29,8 @@
 .produto-pet img {
   border: 2px solid var(--cor-principal);
   border-radius: 0.4rem;
+  height: 200px;
+  width: 360px;
 }
 .produto-pet-span .fa-minus-square {
   color: var(--cor-principal);
@@ -54,5 +56,12 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
+  }
+  .produto-pet img {
+    border: 2px solid var(--cor-principal);
+    border-radius: 0.4rem;
+    height: 200px;
+    width: 260px;
+    padding: 1rem;
   }
 }
