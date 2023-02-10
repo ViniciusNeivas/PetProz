@@ -50,7 +50,7 @@ main .sobre {
 
   align-items: center;
   background-color: var(--cor-white);
-  padding: 4rem 0;
+  padding: 2rem 0;
   margin: 0 1rem;
 }
 
@@ -63,6 +63,10 @@ main .sobre {
 .sobre h1 strong {
   font-size: 4.8rem;
   color: var(--cor-font-extra);
+}
+.sobre h1:after {
+  width: 4rem;
+  margin: 2rem auto;
 }
 
 .sobre h3 {
@@ -82,14 +86,15 @@ main .sobre {
 }
 
 .sobre p {
-  max-width: 50rem;
-  letter-spacing: 0.2rem;
+  max-width: 52rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem;
   margin-top: 2rem;
 }
 
 .sobre aside img {
-  padding-top: 5rem;
-  height: 340px;
+  margin-top: 12rem;
+  height: 360px;
 }
 
 /* ajude */
@@ -147,6 +152,7 @@ main .sobre {
   margin: 1rem 0 4rem 0;
   max-width: 40rem;
   font-size: 1.8rem;
+  line-height: 3rem !important;
 }
 
 .como-doar-div .btn-principal {
@@ -215,6 +221,7 @@ main .sobre {
   font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
+  line-height: 2rem;
   margin: 2rem 0;
   text-align: center;
   padding: 1rem;
@@ -248,13 +255,15 @@ main .sobre {
   text-align: center;
   margin: 2rem 1rem;
   padding: 1rem;
+  line-height: 3rem;
 }
 .texto h5 {
-  margin-top: 1rem;
+  margin: 1.4rem 0;
 }
 .texto p {
   margin-top: 1rem;
   padding: 0 3rem;
+  line-height: 3rem;
 }
 
 /* footer */
