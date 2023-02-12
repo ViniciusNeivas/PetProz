@@ -7,6 +7,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   emailValidate();
   mainPasswordValidate();
+  validar();
 });
 
 function setError(index) {
@@ -32,5 +33,13 @@ function mainPasswordValidate() {
     setError(1);
   } else {
     removeError(1);
+  }
+}
+
+function validar() {
+  if (!(!emailRegex.test(campos[0].value) && campos[1].value.length < 8)) {
+    alert("enviado");
+  } else {
+    alert("não enviado");
   }
 }

@@ -14,7 +14,6 @@ form.addEventListener("submit", (event) => {
   bairroValidate();
   numeroValidate();
   complementoValidate();
-  validar();
 });
 
 function setError(index) {
@@ -97,26 +96,5 @@ function complementoValidate() {
     setError(8);
   } else {
     removeError(8);
-  }
-}
-
-function validar() {
-  if (
-    campos[0].value.length < 3 &&
-    (!emailRegex.test(campos[1].value) &&
-      campos[2].value.length < 8 &&
-      campos[2].value == campos[3].value &&
-      campos[3].value.length >= 8 &&
-      campos[4].value.length < 6 &&
-      campos[5].value.length < 9 &&
-      campos[5].value.length < 9 &&
-      campos[6].value.length < 10 &&
-      (campos[7].value.length < 1 || campos[7].value <= 0) &&
-      campos[8].value.length < 20 &&
-      campos[8].value.length < 20) == true
-  ) {
-    alert("Formulário Enviado !!!");
-  } else {
-    alert("Formulário não enviado, campos com erro !!!");
   }
 }
