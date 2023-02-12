@@ -38,8 +38,14 @@ function mainPasswordValidate() {
 
 function validar() {
   if (!(!emailRegex.test(campos[0].value) && campos[1].value.length < 8)) {
-    alert("enviado");
+    var elemento_pai = document.body;
+    var titulo = document.createElement("h6");
+    titulo.textContent = "Formulário Enviado";
+    elemento_pai.appendChild(titulo);
   } else {
-    alert("não enviado");
+    var elemento_pai = document.body;
+    var titulo = document.createElement("h5");
+    titulo.textContent = "Formulário Não Enviado";
+    elemento_pai.appendChild(titulo);
   }
 }

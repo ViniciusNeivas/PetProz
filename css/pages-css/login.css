@@ -24,6 +24,7 @@ form div {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 form div h4 {

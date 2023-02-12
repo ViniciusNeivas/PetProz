@@ -280,3 +280,27 @@ main .sobre {
 .footer strong {
   color: var(--cor-font-extra);
 }
+
+h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cor-font-extra);
+  position: absolute;
+  top: 780px;
+  right: 590px;
+  background: var(--cor-white);
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cor-font-extra);
+  position: absolute;
+  top: 880px;
+  right: 560px;
+  background: var(--cor-white);
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
