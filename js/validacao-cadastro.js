@@ -5,15 +5,21 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  nameValidate();
-  emailValidate();
-  mainPasswordValidate();
-  comparePassword();
-  ruaValidate();
-  cepValidate();
-  bairroValidate();
-  numeroValidate();
-  complementoValidate();
+  if (
+    (nameValidate() &&
+      emailValidate() &&
+      mainPasswordValidate() &&
+      comparePassword() &&
+      ruaValidate() &&
+      cepValidate() &&
+      bairroValidate() &&
+      numeroValidate() &&
+      complementoValidate()) != true
+  ) {
+    alert("enviado");
+  } else {
+    alert("não enviado");
+  }
 });
 
 function setError(index) {
