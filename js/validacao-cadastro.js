@@ -1,9 +1,9 @@
-const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
-const spans = document.querySelectorAll('.span-required');
+const form = document.getElementById("form");
+const campos = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-form.addEventListener('submit', (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   nameValidate();
   emailValidate();
@@ -14,16 +14,17 @@ form.addEventListener('submit', (event) => {
   bairroValidate();
   numeroValidate();
   complementoValidate();
+  validar();
 });
 
 function setError(index) {
-  campos[index].style.border = '2px solid #ff7f00';
-  spans[index].style.display = 'block';
+  campos[index].style.border = "2px solid #ff7f00";
+  spans[index].style.display = "block";
 }
 
 function removeError(index) {
-  campos[index].style.border = '';
-  spans[index].style.display = 'none';
+  campos[index].style.border = "";
+  spans[index].style.display = "none";
 }
 
 function nameValidate() {
@@ -84,7 +85,7 @@ function bairroValidate() {
 }
 
 function numeroValidate() {
-  if (campos[7].value.length  < 1 || campos[7].value <= 0) {
+  if (campos[7].value.length < 1 || campos[7].value <= 0) {
     setError(7);
   } else {
     removeError(7);
@@ -96,5 +97,26 @@ function complementoValidate() {
     setError(8);
   } else {
     removeError(8);
+  }
+}
+
+function validar() {
+  if (
+    campos[0].value.length < 3 &&
+    (!emailRegex.test(campos[1].value) &&
+      campos[2].value.length < 8 &&
+      campos[2].value == campos[3].value &&
+      campos[3].value.length >= 8 &&
+      campos[4].value.length < 6 &&
+      campos[5].value.length < 9 &&
+      campos[5].value.length < 9 &&
+      campos[6].value.length < 10 &&
+      (campos[7].value.length < 1 || campos[7].value <= 0) &&
+      campos[8].value.length < 20 &&
+      campos[8].value.length < 20) == true
+  ) {
+    alert("Formulário Enviado !!!");
+  } else {
+    alert("Formulário não enviado, campos com erro !!!");
   }
 }
