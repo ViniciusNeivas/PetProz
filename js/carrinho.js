@@ -34,3 +34,27 @@ function valorCompra() {
 
   valorTotalCompra.innerHTML = valor.toFixed(2).replace(".", ",");
 }
+
+function compraBTN() {
+  let elemento = document.getElementById("span");
+  let btnAdicionarSpan = document.createElement("span");
+
+  btnAdicionarSpan.style.display = "inline-block";
+  btnAdicionarSpan.innerHTML = `
+    <aside class="adocao-aside">
+      <figure>
+        <img src="/img/brinquedo-bola-tenis.png" alt="Bola de Tênis" />
+        <div class="adocao-texto">
+          <h4>Bola de Tênis Chuckit M - Pack com 2</h4>
+          <h4>R$ 40,00</h4>
+        </div>
+        <button class="btn-principal">
+          <a style="color: aliceblue" href="./carrinho.html">Comprar</a>
+        </button>
+      </figure>
+    </aside>
+`;
+  elemento.appendChild(btnAdicionarSpan);
+
+}
+compraBTN();

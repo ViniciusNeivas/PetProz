@@ -312,3 +312,17 @@ main .sobre {
   padding: 0.6rem;
   border-radius: 0.4rem;
 }
+.container-span {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.container-span-div {
+  width: 100px;
+  height: 60px;
+  margin-left: 1.2rem;
+}
+.container-span div {
+  display: flex;
+}
