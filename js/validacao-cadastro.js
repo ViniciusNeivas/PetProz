@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
       cepValidate() &&
       bairroValidate() &&
       numeroValidate() &&
-      complementoValidate()) != true
+      complementoValidate()) == true
   ) {
     alert("enviado");
   } else {
