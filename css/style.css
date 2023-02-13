@@ -281,26 +281,15 @@ main .sobre {
   color: var(--cor-font-extra);
 }
 
-h6 {
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--cor-font-extra);
-  position: absolute;
-  top: 780px;
-  right: 590px;
-  background: var(--cor-white);
+#elementoPai {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  color: var(--cor-white);
+  border: 1px solid var(--cor-font-extra);
   padding: 1rem;
-  border-radius: 0.8rem;
-}
-
-h5 {
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--cor-font-extra);
-  position: absolute;
-  top: 880px;
-  right: 560px;
-  background: var(--cor-white);
-  padding: 1rem;
-  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  margin: -4rem auto 4rem;
+  display: none;
 }
