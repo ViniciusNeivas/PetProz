@@ -3,7 +3,7 @@ form {
   flex-direction: column;
   max-width: 75rem;
   margin: 1rem auto;
-  padding: 2rem 0;
+  padding: 4rem;
   background-color: var(--cor-principal);
   border-radius: 2rem;
 }
