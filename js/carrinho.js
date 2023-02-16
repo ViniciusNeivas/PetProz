@@ -1,5 +1,5 @@
 var valorTotal = [0, 0];
-var valorProduto = [25.0, 15.0];
+var valorProduto = [40.0, 15.0];
 var qtd = [0, 0];
 
 function adicionarItem(item) {
@@ -55,6 +55,5 @@ function compraBTN() {
     </aside>
 `;
   elemento.appendChild(btnAdicionarSpan);
-
 }
 compraBTN();
