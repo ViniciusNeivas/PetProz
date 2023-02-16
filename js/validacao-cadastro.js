@@ -6,7 +6,8 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   if (
-    (nameValidate() &&
+    !(
+      nameValidate() &&
       emailValidate() &&
       mainPasswordValidate() &&
       comparePassword() &&
@@ -14,7 +15,8 @@ form.addEventListener("submit", (event) => {
       cepValidate() &&
       bairroValidate() &&
       numeroValidate() &&
-      complementoValidate()) == true
+      complementoValidate()
+    ) == true
   ) {
     alert("enviado");
   } else {
